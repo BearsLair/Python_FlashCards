@@ -4,4 +4,3 @@ class Card:
         self.back = back
         self.tags = tags
         self.id = id
-        
