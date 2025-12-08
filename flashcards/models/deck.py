@@ -1,20 +1,25 @@
+import random
+
 class Deck:
     def __init__(self, name):
         self.name = name
         self.cards = []
         self.totalCards = 0
 
-        def addCard(card):
-            pass
+    def add_card(self, card):
+        self.cards.append(card)
 
-        def removeCard(card):
-            pass
+    def remove_card(self, index):
+        del self.cards[index]
 
-        def getCard(index):
-            pass
+    def get_card(self, index):
+        if 0 <= index < len(self.cards):
+            return self.cards[index]
+        else:
+            return -1         
         
-        def shuffleDeck():
-            pass
+    def shuffle_deck(self):
+        random.shuffle(self.cards)
 
-        def getLength():
-            pass
+    def get_length(self):
+        return len(self.cards)
