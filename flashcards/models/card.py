@@ -4,5 +4,4 @@ class Card:
         self.back = back
         self.tags = tags
         self.id = id
-
-c1 = Card("Dog", "Mammal", "animals, mammal", 1)
+        
